@@ -60,25 +60,23 @@ var products = [
     }
 ];
 function setSubcategory() {
-    $(".subcategory-title1").text(staticContent.SubCategory.subCategory1);    
-    $(".subcategory-title2").text(staticContent.SubCategory.subCategory2);    
-    $(".subcategory-title3").text(staticContent.SubCategory.subCategory3);
-    $(".subcategory-title4").text(staticContent.SubCategory.subCategory4);    
-    $(".subcategory-title5").text(staticContent.SubCategory.subCategory5);    
-    $(".subcategory-title6").text(staticContent.SubCategory.subCategory6);        
+    for (let subcategory of Object.values(staticContent.SubCategory)) {
+        html = "<span>"+subcategory+"</span>";
+        $("#subcategory").append(html);
+    }       
 }
 function setSpecialism() {
-    $(".specialism-title1").text(staticContent.Specialism.specialism1);    
-    $(".specialism-title2").text(staticContent.Specialism.specialism2);    
-    $(".specialism-title3").text(staticContent.Specialism.specialism3);
-    $(".specialism-title4").text(staticContent.Specialism.specialism4);    
-    $(".specialism-title5").text(staticContent.Specialism.specialism5);    
+    for (let special of Object.values(staticContent.Specialism)) {
+        html = "<span>"+special+"</span>";
+        $("#specialism").append(html);
+    }
 }
 
 function setTab() {
-        $(".tab-title1").text(staticContent.Tab.tab1);    
-        $(".tab-title2").text(staticContent.Tab.tab2);    
-        $(".tab-title3").text(staticContent.Tab.tab2);
+    for (let tab of Object.values(staticContent.Tab)) {
+        html = "<span>"+tab+"</span>";
+        $("#tab").append(html);
+    }
 }
 
 function setProducts() {
