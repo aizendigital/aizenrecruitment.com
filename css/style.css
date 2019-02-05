@@ -121,38 +121,40 @@ body {
 	background: #f0f0f0;
 }
 .about-background {
-	background-image: url(../img/about/about.png);
-	height: calc(100vh - 160px);
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
+    background-image: url(../img/about/about.png);
+    /* height: calc(100vh - 160px); */
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
 .about-content{
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	justify-content: flex-end;
 	align-content: center;
 	align-items: center;
-	padding: 32px 64px;
+	padding: 16px 32px;
 	box-sizing: border-box;
+	margin-top: 200px;
 }
-.about-content-img {
+/* .about-content-img {
 	width: 35%;
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
 	padding-right: 62px;
-}
+} */
 .about-content-info {
 	display: flex;
 	flex-direction: column;
-	width: 50%;
+	width: 500px;
+	padding-left: 64px;
 }
 .about-content-info p {
 	font-size: 14px;
@@ -167,12 +169,11 @@ body {
 }
 /* Contact */
 .hire-background {
-	/* background-image: url(../img/about/about.png); */
+	background-image: url(../img/hire/hire.png);
 	/* height: calc(130vh); */
-	background-position: center;
+	background-position: left bottom;
 	background-repeat: no-repeat;
-	background-size: cover;
-	background-size: auto;
+	background-size: inherit;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -212,7 +213,7 @@ body {
 .hire-main img{
 	
 }
-.hire-form .hire-form-title{
+.hire-form-title{
 	padding: 16px 24px;
 	background: #ff4d00;
 	border-radius: 30px;
@@ -226,15 +227,24 @@ body {
 	font-weight: bold;
 	cursor: pointer;
 }
+.hire-form {
+	width: 45%;
+}
 .hire-form .main-row{
 	display: flex;
 	padding-top: 32px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
 }
 .hire-form input {
 	border-radius: 20px;
-    padding: 4px 8px;
-	box-sizing: border-box;
-	border: none;
+    padding: 8px 16px;
+    box-sizing: border-box;
+    border: none;
+    box-sizing: border-box;
+	width: 300px;
+	outline: none;
 }
 .hire-form  input::placeholder{
 	color: #9b9b9b;
@@ -248,6 +258,7 @@ body {
 	padding: 8px 8px;
 	resize: none;
 	box-sizing: border-box;
+	outline: none;
 }
 .submit-post{
 	padding: 16px 24px;
@@ -263,10 +274,13 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	cursor: pointer;
-	width: 300px;
 	margin-bottom: 107px;
+	outline: none;
 }
-
+.main-row.btn {
+	justify-content: center;
+	box-shadow: none;
+}
 /* Job */
 .job-header {
 	background-color: #22223f;
@@ -291,6 +305,7 @@ body {
 	border: none;
 	margin: 32px 0;
 	box-sizing: border-box;
+	outline: none;
 }
 .job-header .job-header-tab span{
 	font-size: 20px;
