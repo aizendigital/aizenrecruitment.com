@@ -2,7 +2,7 @@ var staticContent = {
     SubCategory: {
         subCategory1: "Creative",
         subCategory2: "Marketing ",
-        subCategory3: "Marketing ",
+        subCategory3: "Sales ",
         subCategory4: "Technology ",
         subCategory5: "Production ",
         subCategory6: "Food Service ",

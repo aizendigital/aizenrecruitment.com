@@ -297,6 +297,8 @@ body {
 	line-height: normal;
 	letter-spacing: normal;
 	color: #ffffff;
+	min-width: 84px;
+	text-align: center;
 }
 .job-header input {
 	border-radius: 24px;
@@ -334,6 +336,9 @@ body {
     box-sizing: border-box;
 	margin: 0 30px 0 0;
 	background: #454195;
+    width: 160px;
+    text-align: center;
+    box-sizing: border-box;
 }
 .specialism {
 	display: flex;
@@ -346,6 +351,9 @@ body {
 	padding: 12px 24px;
 	box-sizing: border-box;
 	margin: 0 30px 0 0;
+	width: 160px;
+    text-align: center;
+    box-sizing: border-box;
 
 }
 .job-main-card {
