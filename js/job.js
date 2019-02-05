@@ -81,18 +81,35 @@ function setTab() {
         $(".tab-title3").text(staticContent.Tab.tab2);
 }
 
-// function setProducts() {
-//     for (var i = 1; i<= products.length; i++) {
-//         console.log(html);
-//         html = "<div class='main-title'><p class='head'>"+products[i].product.title+"</p><span>"+products[i].product.subtitle+"</span></div><div class='main-info'><p>"+products[i].product.information+"</p></div><div class='main-cost'><b>"+products[i].product.surrey+"</b><b>"+products[i].product.petmanet+"</b><b>"+products[i].product.minCost+"</b><b>"+products[i].product.maxCost+"</b><b>"+products[i].product.bens+"</b></div><div class='main-btn'>Viw Apply</div>";
-
-//     }
-//     $("#job-card").append(html);
-// } 
+function setProducts() {
+    
+    for(var i = 1; i<= products.length; i++) {
+        var product = products[i-1].product;
+        html = `<div class="job-card">
+                    <div class='main-title'>
+                        <p class='head'>`+product.title+`</p>
+                        <span>`+product.subtitle+`</span>
+                    </div>
+                    <div class='main-info'><p>`+product.information+`</p></div>
+                    <div class='main-cost'>
+                        <b>`+product.surrey+`</b>
+                        <b>`+product.petmanet+`</b>
+                        <b>`+product.minCost+`</b>
+                        <b>`+product.maxCost+`</b>
+                        <b>`+product.bens+`</b>
+                    </div>
+                    <div class='main-btn'>
+                        <div class="btn-view">View</div>
+                        <div class="btn-apply"> Apply</div>
+                    </div>
+                </div>`;
+        $("#job-card").append(html);
+    }
+}
 
 $(document).ready(function() {
     setTab();
     setSubcategory();
     setSpecialism();
-    // setProducts();
+    setProducts();
 });
