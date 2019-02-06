@@ -386,7 +386,7 @@ body {
 }
 .main-title {
 	border-right: 1px solid #fa5c17;
-	padding: 0 16px;
+	padding: 0 32px;
 	display: flex;
     flex-direction: column;
     justify-content: center;
@@ -413,12 +413,13 @@ body {
 	color: #000000;
 }
 .main-info {
-    padding-left: 16px;
+    padding-left: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    padding-right: 16px;
+    width: 320px;
+	padding-right: 32px;
+	box-sizing: border-box;
 }
 .main-cost {
 	display: flex;
@@ -451,4 +452,17 @@ body {
     font-size: 20px;
     text-align: center;
     color: #ffffff;
+}
+.contact-background {
+	background-image: url(../img/contact/contact.png);
+    /* height: calc(100vh - 160px); */
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
