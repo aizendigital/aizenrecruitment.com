@@ -70,12 +70,11 @@ body {
 }
 
 .landing-background {
-	background-image: url(../img/landing/top-1.png);
+	background-image: url(../img/landing/top-11.png);
 	height: 100vh;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-size: auto;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -84,22 +83,25 @@ body {
 }
 .landing-content{
 	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
-	align-content: space-between;
-	width: 70%;
-	height: 80%;
-	margin: 0 auto;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: center;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
 }
 .landing-content-hire{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+}
+.landing-content-hire img, .landing-content-job img	{
+	margin-top: 64px;
 }
 .landing-content-job{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 .landing-content-btn {
 	padding: 16px 24px;
@@ -115,6 +117,7 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	cursor: pointer;
+	margin-bottom: 64px;
 }
 /* About */
 .about , .hire, .job, .contact{
