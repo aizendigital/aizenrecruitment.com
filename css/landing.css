@@ -1,0 +1,56 @@
+/* Landing */
+.landing-background .header li a,
+.landing-background .header li a:active,
+.landing-background .header li a:hover {
+	color: #ffffff;
+	border-color: #ffffff;
+}
+
+.landing-background {
+	background-image: url(../img/landing/top-11.png);
+	background-size: cover;
+    background-position: top;
+    min-height: 100%;
+    height: 100vh;
+    position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	/* align-items: center; */
+	width: 100%;
+}
+.landing-content {
+	display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-content: center;
+    width: 70%;
+    height: 80%;
+    margin: 0 auto;
+}
+.landing-content-text {
+    display: flex;
+    flex-direction: column;
+	justify-content: flex-start;
+}
+.landing-content-text img {
+	margin-top: 64px;
+}
+.landing-content-btn {
+	padding: 16px 24px;
+	background: #ff4d00;
+	border: 5px solid #ef3200;
+	border-radius: 30px;
+	align-items: center;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	color: #ffffff;
+	font-size: 30px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-bottom: 64px;
+    box-sizing: border-box;
+    height: 96px;
+    cursor: pointer;
+}

@@ -3,6 +3,11 @@ html {
 }
 body {
 	background-color: #999999;
+	width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: static;
 }
 /* Header */
 
@@ -61,64 +66,7 @@ body {
 	padding-bottom: 16px;
 	text-align: left;
 }
-/* Landing */
-.landing-background .header li a,
-.landing-background .header li a:active,
-.landing-background .header li a:hover {
-	color: #ffffff;
-	border-color: #ffffff;
-}
 
-.landing-background {
-	background-image: url(../img/landing/top-11.png);
-	height: 100vh;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: center;
-	width: 100%;
-}
-.landing-content{
-	display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-content: center;
-    width: 70%;
-    height: 80%;
-    margin: 0 auto;
-}
-.landing-content-hire{
-    display: flex;
-    flex-direction: column;
-	justify-content: flex-start;
-}
-.landing-content-hire img, .landing-content-job img	{
-	margin-top: 64px;
-}
-.landing-content-job{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
-.landing-content-btn {
-	padding: 16px 24px;
-	background: #ff4d00;
-	border: 5px solid #ef3200;
-	border-radius: 30px;
-	align-items: center;
-	box-sizing: border-box;
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	color: #ffffff;
-	font-size: 30px;
-	font-weight: bold;
-	cursor: pointer;
-	margin-bottom: 64px;
-}
 /* About */
 .about , .hire, .job, .contact{
 	background: #f0f0f0;
