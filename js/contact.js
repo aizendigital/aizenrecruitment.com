@@ -53,7 +53,6 @@ function setContact() {
             </div>
          </div>`;
         $("#contact-info").append(html);
-        console.log(html)
 
     }
 }
@@ -61,10 +60,3 @@ function setContact() {
 $(document).ready(function() {
     setContact();
 });
-
-// <div class="address">
-// <b>Address:</b>` + Element + `
-// </div>
-// <div class="phone">
-// <b>Tel:</b> ` + Element+ `
-// </div>`
