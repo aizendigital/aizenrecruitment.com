@@ -24,8 +24,8 @@
     flex-direction: row-reverse;
     justify-content: space-around;
     align-content: center;
-    width: 70%;
-    height: 80%;
+    width: 80%;
+    height: calc(100vh - 160px);
     margin: 0 auto;
 }
 .landing-content-text {
