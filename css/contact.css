@@ -21,15 +21,16 @@
 .contact-info{
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    height: 50vh;
+    /* height: 50vh; */
     margin: 64px auto;
     
 }
 .contact-info .coloumn{
 	display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: flex-start;
+    margin-top: 240px
 
 }
 .contact-info .coloumn b{
