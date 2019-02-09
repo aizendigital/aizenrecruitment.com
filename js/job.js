@@ -27,38 +27,64 @@ var products = [
             title: "Developpeur C#",
             subtitle: "",
             information: "Projet: application permettant la gestion des transactions (Front et Back). 300 Développeurs, des millions de lignes de codes et 15 base de données (Oracle principalement), une centaine D’API (http) et 230000 tests en continue Code…",
-            surrey: "",
+            surrey: "Paris",
             petmanet: "Freelance",
             minCost: "",
             maxCost: "",
             bens: "",
-            applyLink: "https://google.com"
+            applyLink: "https://taleez.com/apply/3q4ilf9#/apply"
         }
     },
     {
         product: {
-            title: "EMEA Marketing Lead2",
-            subtitle: "Marketing & Communications",
-            information: "EMEA Marketing Lead - London - £60-80K plus Bonus My client are on a mission to eliminate fraud within the world of ecommerce. Since 2013, they have been innovating fraud…",
-            surrey: "Surrey",
-            petmanet: "Permanent",
-            minCost: " £50000.00",
-            maxCost: "£58000.00 per ",
-            bens: "annum + bens",
-            applyLink: "https://google.com"
+            title: "Ingénieur Mécanique Industriel",
+            subtitle: "",
+            information: " Sous la supervision du CTO, l’ingénieur mécanique sera notamment en charge de: Conception du design du produit et réalisation de plans mécaniques…",
+            surrey: "Paris",
+            petmanet: "Full-time",
+            minCost: "€35,000",
+            maxCost: "€55,000 per ",
+            bens: "annum",
+            applyLink: "https://taleez.com/apply/1ipot8m#/apply"
         }
     },
     {
         product: {
-            title: "EMEA Marketing Lead3",
-            subtitle: "Marketing & Communications",
-            information: "EMEA Marketing Lead - London - £60-80K plus Bonus My client are on a mission to eliminate fraud within the world of ecommerce. Since 2013, they have been innovating fraud…",
-            surrey: "Surrey",
-            petmanet: "Permanent",
-            minCost: " £50000.00",
-            maxCost: "£58000.00 per ",
-            bens: "annum + bens",
-            applyLink: "https://google.com"
+            title: "Data Analyst",
+            subtitle: "",
+            information: "statistique du service pour les clients de connaître les utilisations des kiosques de leurs utilisateurs (nombre de recherches, magasins plus recherchés, etc.)…",
+            surrey: "Istanbul",
+            petmanet: "Full-time",
+            minCost: "€10,000",
+            maxCost: "€18,000 per ",
+            bens: "annum",
+            applyLink: "https://taleez.com/apply/29da05o#/apply"
+        }
+    },
+    {
+        product: {
+            title: "Automaticien",
+            subtitle: "Metteur au Point CVC H/F",
+            information: "Vous assurez toute la gestion des dossiers depuis la rédaction de l’analyse fonctionnelle à la mise en service sur le site. Vous êtes en charge du secteur en France avec les déplacements à l’international occasionnels…",
+            surrey: "Palaiseau (91), Ile De France",
+            petmanet: "Full-time",
+            minCost: "€34,000",
+            maxCost: "€45,000 per",
+            bens: "anum",
+            applyLink: "https://taleez.com/apply/3dftt33#/apply"
+        }
+    },
+    {
+        product: {
+            title: "Infirmier Anesthésiste Diplômé d’Etat. CDI",
+            subtitle: "",
+            information: "Equipe: – Médecins anesthésistes, chirurgiens, Equipe soignante du bloc, Plateaux médico-techniques, Laboratoires, Pharmacie, Economat, Brancardiers, Service biomédical, Radiologie…",
+            surrey: "Montpellier",
+            petmanet: "Full-time",
+            minCost: "€28,000",
+            maxCost: "€49,000 per",
+            bens: "anum",
+            applyLink: "https://taleez.com/apply/17kkom1#/apply"
         }
     }
 ];
