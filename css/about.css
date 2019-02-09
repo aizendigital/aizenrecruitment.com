@@ -48,3 +48,21 @@
 	padding-top: 8px;
 	padding-bottom: 16px;
 }
+
+@media screen and (max-width: 818px) {
+	.about-background{
+		background-image: none;
+		height: auto;		
+	}
+	.about-content {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		margin-top: 32px;
+		margin-bottom: 32px;
+		height: auto;
+	}
+	.about-content-info{
+		padding-left: 0;
+	}
+}
