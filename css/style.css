@@ -96,13 +96,11 @@ body {
 		align-items: center;
 		align-content: center;
 		cursor: pointer;
-		/* position: absolute; */
 		z-index: 99999999;
 	}
 	#header-mobile{
 		background: #000000;
 		color: #ffffff;
-		/* display: flex; */
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
@@ -137,5 +135,9 @@ body {
 		font-size: 30px;
 		text-decoration: none;
 		padding: 8px;
+	}
+	/* Landing */ 
+	.landing-background .nav-mobile, .job .nav-mobile {
+		position: absolute;
 	}
 }
