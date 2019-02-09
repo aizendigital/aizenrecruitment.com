@@ -28,14 +28,6 @@
     height: calc(100vh - 160px);
     margin: 0 auto;
 }
-.landing-content-text {
-    display: flex;
-    flex-direction: column;
-	justify-content: flex-start;
-}
-.landing-content-text img {
-	margin-top: 64px;
-}
 .landing-content-btn {
 	padding: 16px 24px;
 	background: #ff4d00;
