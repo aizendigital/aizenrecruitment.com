@@ -113,6 +113,7 @@ function setProducts() {
     for(var i = 1; i<= products.length; i++) {
         var product = products[i-1].product;
         html = `<div class="job-card">
+                    <div></div>
                     <div class='main-title'>
                         <p class='head'>`+product.title+`</p>
                         <span>`+product.subtitle+`</span>
@@ -128,6 +129,7 @@ function setProducts() {
                     <div class='main-btn'>
                         <a class="btn-apply" href='`+product.applyLink+`'> Apply</a>
                     </div>
+                    <div></div>
                 </div>`;
         $("#job-card").append(html);
     }

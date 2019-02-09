@@ -87,16 +87,14 @@
 	flex-direction: column;
 }
 .job-card{
-	display: flex;
-    flex-direction: row;
-    padding: 16px 32px;
-    margin: 16px 0;
+	padding: 16px 32px;
+	margin: 16px 0;
 	background-color: #ffffff;
-	box-sizing: border-box;
-	height: 200px;
-	justify-content: center;
-	/* align-content: center;
-	align-items: center; */
+    box-sizing: border-box;
+    height: 250px;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 20% 15% 20% 10% 10% 20%;
 }
 .main-title {
 	border-right: 1px solid #fa5c17;
@@ -108,16 +106,12 @@
     align-content: center;
 }
 .main-title .head{
-	width: 221px;
-	height: 95px;
-	font-family: SegoeUI;
 	font-size: 29px;
 	font-weight: 600;
 	letter-spacing: normal;
 	color: #fa5c17;
 }
 .main-title span {
-	font-family: SegoeUI;
 	font-size: 16px;
 	font-weight: 600;
 	font-style: normal;
@@ -149,6 +143,7 @@
 	align-content: center;
 	padding: 8px 16px;
 	box-sizing: border-box;
+	align-items: center;
 }
 .btn-apply{
 	border-radius: 22px;
