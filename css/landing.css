@@ -64,6 +64,8 @@
 		align-content: center;
 		justify-content: space-between;
 		margin-top: 128px;
+		width: 100%;
+		height: auto;
 	}
 	.landing-content-btn{
 	    height: 75px;

@@ -96,7 +96,7 @@ body {
 		align-items: center;
 		align-content: center;
 		cursor: pointer;
-		position: absolute;
+		/* position: absolute; */
 		z-index: 99999999;
 	}
 	#header-mobile{
@@ -106,7 +106,7 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		height: 100vh;
+		height: calc(100vh - 72px);
 		padding-top: 64px;
 		padding-bottom: 64px;
 	}
