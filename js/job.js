@@ -24,14 +24,14 @@ var staticContent = {
 var products = [
     {
         product: {
-            title: "EMEA Marketing Lead1",
-            subtitle: "Marketing & Communications",
-            information: "EMEA Marketing Lead - London - £60-80K plus Bonus My client are on a mission to eliminate fraud within the world of ecommerce. Since 2013, they have been innovating fraud…",
-            surrey: "Surrey",
-            petmanet: "Permanent",
-            minCost: " £50000.00",
-            maxCost: "£58000.00 per ",
-            bens: "annum + bens"
+            title: "Developpeur C#",
+            subtitle: "",
+            information: "Projet: application permettant la gestion des transactions (Front et Back). 300 Développeurs, des millions de lignes de codes et 15 base de données (Oracle principalement), une centaine D’API (http) et 230000 tests en continue Code…",
+            surrey: "",
+            petmanet: "Freelance",
+            minCost: "",
+            maxCost: "",
+            bens: ""
         }
     },
     {
