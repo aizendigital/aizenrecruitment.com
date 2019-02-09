@@ -52,5 +52,11 @@
 	margin-bottom: 64px;
     box-sizing: border-box;
     height: 96px;
-    cursor: pointer;
+	cursor: pointer;
+}
+.landing-content-btn:hover, .landing-content-btn:active {
+	color: #ff4d00;
+	border: 5px solid #ff4d00;
+	background: #ffffff;
+	text-decoration: none;
 }
