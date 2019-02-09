@@ -34,6 +34,9 @@ body {
 	border-bottom: 2px solid #000000;
 	padding-bottom: 4px;
 }
+.nav-mobile{
+	display: none;
+}
 /* Footer */
 .footer {
 	display: flex;
