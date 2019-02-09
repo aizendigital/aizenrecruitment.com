@@ -86,6 +86,19 @@ var products = [
             bens: "anum",
             applyLink: "https://taleez.com/apply/17kkom1#/apply"
         }
+    },
+    {
+        product: {
+            title: "Infirmier Anesthésiste Diplômé d’Etat . CDD",
+            subtitle: "",
+            information: "Equipe: – Médecins anesthésistes, chirurgiens, Equipe soignante du bloc, Plateaux médico-techniques, Laboratoires, Pharmacie, Economat, Brancardiers, Service biomédical, Radiologie…",
+            surrey: "Montpellier",
+            petmanet: "Full-time",
+            minCost: "",
+            maxCost: "",
+            bens: "",
+            applyLink: "https://taleez.com/apply/ogc9v#/apply"
+        }
     }
 ];
 function setSubcategory() {
