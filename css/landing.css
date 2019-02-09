@@ -52,3 +52,25 @@
 	background: #ffffff;
 	text-decoration: none;
 }
+@media screen and (max-width: 818px){
+	.landing-background {
+		height: 100vh;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	.landing-content {
+		flex-direction: column;
+		align-items: center;
+		align-content: center;
+		justify-content: space-between;
+	}
+	.landing-content-btn{
+	    height: 75px;
+		padding: 8px 16px;
+		width: 300px;
+		margin: 0 auto 64px;
+	}
+	.landing-content-text img{
+		margin-bottom: 64px;
+	}
+}

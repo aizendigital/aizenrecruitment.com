@@ -143,7 +143,7 @@
 	align-content: center;
 	padding: 8px 16px;
 	box-sizing: border-box;
-	align-items: center;
+	align-items: center;s
 }
 .btn-apply{
 	border-radius: 22px;
@@ -165,3 +165,51 @@
 	box-sizing: border-box;
 }
 
+@media screen and (max-width: 818px) {
+	.subcategory {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.subcategory span {
+		margin: 8px auto;
+	}
+	.specialism{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.specialism span{
+		margin: 8px auto;
+	}
+	.job-card {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		align-content: center;
+		height: 420px;
+	}
+	.job-card .main-title{
+		border-right: none;
+		border-bottom: 1px solid #fa5c17;
+		margin-bottom: 16px;
+		padding: 0;
+		text-align: center;
+		padding-bottom: 16px;
+	}
+	.job-card .main-cost{
+		margin: 16px auto;
+		padding: 0;
+		text-align: center;
+	}
+	.job-card .main-info{
+		padding-right: 0;
+		padding-left: 0;
+		width: 100%;
+		margin: 16px auto;
+
+	}
+}

@@ -6,3 +6,5 @@ let html = `
     <li><a href="mailto:idin.khanoom.khayami@gmail.com?Subject=CV">SEND CV</a></li>      
     <li><a href="./contact.html">CONTACT</a></li>`
 $('.header').append(html);
+
+
