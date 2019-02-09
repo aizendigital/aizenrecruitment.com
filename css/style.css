@@ -94,6 +94,7 @@ body {
 		align-content: center;
 		cursor: pointer;
 		position: absolute;
+		z-index: 99999999;
 	}
 	#header-mobile{
 		background: #000000;

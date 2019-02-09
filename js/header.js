@@ -27,8 +27,6 @@ $('#header-mobile').append(headeMobile);
 
 function checkMobileNavigation() {
     var headerMobile = document.getElementById("header-mobile");
-    console.log("header")
-
     if (headerMobile.style.display === "flex") {
         headerMobile.style.display = "none";
     } else {
