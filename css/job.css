@@ -190,7 +190,7 @@
 		justify-content: space-between;
 		align-items: center;
 		align-content: center;
-		height: 420px;
+		height: 470px;
 	}
 	.job-card .main-title{
 		border-right: none;
@@ -211,5 +211,8 @@
 		width: 100%;
 		margin: 16px auto;
 
+	}
+	.job-header .first {
+		padding-top: 70px;
 	}
 }

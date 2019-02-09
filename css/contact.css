@@ -155,3 +155,41 @@
 	margin-bottom: 107px;
 	outline: none;
 }
+
+@media screen and (max-width: 818px){
+	.contact-background {
+		background-image: none;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+	}
+	.contact-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin: 64px auto 32px;
+	}
+	.contact-info .coloumn {
+		margin-top: 32px;
+		width: 100%;
+		padding: 8px 16px;
+	}
+	.email{
+		margin-top: 0;
+	}
+	.contact-form .main-row {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-top: 16px;
+	}
+	.contact-form .main-row input {
+		margin: 16px auto;
+	}
+	.contact-form textarea {
+		width: 80%;
+	}
+	
+}
