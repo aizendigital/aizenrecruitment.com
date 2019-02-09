@@ -165,5 +165,13 @@
     box-sizing: border-box;
     font-size: 20px;
     text-align: center;
-    color: #ffffff;
+	color: #ffffff;
+	cursor: pointer;
 }
+.btn-apply:hover, .btn-apply:active{
+	background-color: #ffffff;
+	color: #fa5c17;
+	border: 1px solid #fa5c17;
+	text-decoration: none;
+}
+

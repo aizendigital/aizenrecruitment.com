@@ -31,7 +31,8 @@ var products = [
             petmanet: "Freelance",
             minCost: "",
             maxCost: "",
-            bens: ""
+            bens: "",
+            applyLink: "https://google.com"
         }
     },
     {
@@ -43,7 +44,8 @@ var products = [
             petmanet: "Permanent",
             minCost: " £50000.00",
             maxCost: "£58000.00 per ",
-            bens: "annum + bens"
+            bens: "annum + bens",
+            applyLink: "https://google.com"
         }
     },
     {
@@ -55,7 +57,8 @@ var products = [
             petmanet: "Permanent",
             minCost: " £50000.00",
             maxCost: "£58000.00 per ",
-            bens: "annum + bens"
+            bens: "annum + bens",
+            applyLink: "https://google.com"
         }
     }
 ];
@@ -97,8 +100,7 @@ function setProducts() {
                         <b>`+product.bens+`</b>
                     </div>
                     <div class='main-btn'>
-                        <div class="btn-view">View</div>
-                        <div class="btn-apply"> Apply</div>
+                        <a class="btn-apply" href='`+product.applyLink+`'> Apply</a>
                     </div>
                 </div>`;
         $("#job-card").append(html);
