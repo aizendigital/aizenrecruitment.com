@@ -1,26 +1,3 @@
-var staticContent = {
-    SubCategory: {
-        subCategory1: "Creative",
-        subCategory2: "Marketing ",
-        subCategory3: "Sales ",
-        subCategory4: "Technology ",
-        subCategory5: "Production ",
-        subCategory6: "Food Service ",
-    },
-    Specialism: {
-        specialism1: "Analytics",
-        specialism2: "Biddable Media",
-        specialism3: "SEO",
-        specialism4: "CRM",
-        specialism5: "eCommerce",  
-    },
-    Tab: {
-        tab1: "All",
-        tab2: "Contract",
-        tab3: "Permanent"
-    }
-};
-
 var products = [
     {
         product: {
@@ -101,25 +78,6 @@ var products = [
         }
     }
 ];
-function setSubcategory() {
-    for (let subcategory of Object.values(staticContent.SubCategory)) {
-        html = "<span>"+subcategory+"</span>";
-        $("#subcategory").append(html);
-    }       
-}
-function setSpecialism() {
-    for (let special of Object.values(staticContent.Specialism)) {
-        html = "<span>"+special+"</span>";
-        $("#specialism").append(html);
-    }
-}
-
-function setTab() {
-    for (let tab of Object.values(staticContent.Tab)) {
-        html = "<span>"+tab+"</span>";
-        $("#tab").append(html);
-    }
-}
 
 function setProducts() {
     
@@ -149,8 +107,5 @@ function setProducts() {
 }
 
 $(document).ready(function() {
-    setTab();
-    setSubcategory();
-    setSpecialism();
     setProducts();
 });
