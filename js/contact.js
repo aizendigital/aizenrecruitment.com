@@ -41,10 +41,10 @@ function setContact() {
         contactInfo = contact[i - 1];
         html = `
         <div class='coloumn'>
-            <div class='location'>
+            <h2 class='location'>
                 <div class="circle"></div><span>`+ contactInfo.country +`</span>
                 <span>`+ contactInfo.city +`</span>
-            </div>
+            </h2>
             <div class="address">
                 <b>Address:</b>` + contactInfo.contactLocation[0].address + `
             </div>

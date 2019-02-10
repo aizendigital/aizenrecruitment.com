@@ -86,7 +86,7 @@ function setProducts() {
         html = `<div class="job-card">
                     <div></div>
                     <div class='main-title'>
-                        <p class='head'>`+product.title+`</p>
+                        <h2 class='head'>`+product.title+`</h2>
                         <span>`+product.subtitle+`</span>
                     </div>
                     <div class='main-info'><p>`+product.information+`</p></div>

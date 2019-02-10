@@ -76,4 +76,8 @@
 	.landing-content-text img{
 		margin-bottom: 64px;
 	}
+	.landing-content-text{
+		display: flex;
+		flex-direction: column-reverse;
+	}
 }

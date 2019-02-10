@@ -104,9 +104,13 @@ body {
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
-		height: calc(100vh - 72px);
-		padding-top: 64px;
-		padding-bottom: 64px;
+		height: 100vh;
+		/* padding-top: 64px; */
+		/* padding-bottom: 64px; */
+		position: fixed;
+		z-index: 9999;
+		width: 100%;
+		
 	}
 	#header-mobile li{
 		padding: 8px 16px;

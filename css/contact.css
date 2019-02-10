@@ -152,11 +152,17 @@
 	font-size: 30px;
 	font-weight: bold;
 	cursor: pointer;
-	margin-bottom: 107px;
+	margin-bottom: 32px;
 	outline: none;
 }
 
 @media screen and (max-width: 818px){
+	.contact {
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
 	.contact-background {
 		background-image: none;
 		height: auto;
@@ -168,7 +174,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin: 64px auto 32px;
+		margin: 0 auto 32px;
 	}
 	.contact-info .coloumn {
 		margin-top: 32px;
