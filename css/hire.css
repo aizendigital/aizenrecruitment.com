@@ -108,6 +108,11 @@
 	margin-bottom: 32px;
 	outline: none;
 }
+.submit-post:hover,
+.submit-post:active {
+	background: #ffffff;
+	color: #ef3200;
+}
 .main-row.btn {
 	justify-content: center;
 	box-shadow: none;
