@@ -19,8 +19,9 @@ body {
     justify-content: center;
     align-items: center;
     align-content: center;
-    height: 80px;
 	list-style-type: none;
+	height: 90px;
+    margin-bottom: 32px;
 }
 .header li{
         padding: 0 16px;
