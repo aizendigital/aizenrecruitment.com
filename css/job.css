@@ -40,7 +40,7 @@
     height: 250px;
     justify-content: center;
     display: grid;
-    grid-template-columns: 20% 15% 20% 10% 10% 20%;
+    grid-template-columns: 10% 25% 30% 15% 10% 10%
 }
 .main-title {
 	border-right: 1px solid #fa5c17;
@@ -71,7 +71,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 320px;
+    /* width: 320px; */
 	padding-right: 32px;
 	box-sizing: border-box;
 }
