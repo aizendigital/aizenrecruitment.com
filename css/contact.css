@@ -4,10 +4,9 @@
     /* height: calc(100vh); */
     background-position: top left;
     background-repeat: no-repeat;
-    background-size: contain;
-    background-size: auto;
+    background-size: 50%;
     display: grid;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 15% 70% 15%;
     width: 100%;
 }
 .contact-cont {
@@ -96,7 +95,7 @@
 	padding-left: 4px;
 }
 .contact-form {
-	width: 100%;
+	width: auto;
 	margin: auto;
 	display: flex;
 	justify-content: center;
@@ -163,6 +162,11 @@
 .main-row.btn {
 	box-shadow: none;
 }
+/* @media screen and (min-width:818px) and (max-width: 1520px) {
+	.contact-background {
+		background-image: none;
+	}
+} */
 
 @media screen and (max-width: 818px){
 	.contact {

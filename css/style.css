@@ -146,3 +146,10 @@ body {
 		position: absolute;
 	}
 }
+
+.right {
+	margin-right: 16px;
+}
+.left {
+	margin-left: 16px;
+}

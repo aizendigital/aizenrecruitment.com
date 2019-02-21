@@ -75,12 +75,7 @@
 	outline: none;
 	height: 46px;
 }
-.hire-form input.right {
-	margin-right: 16px;
-}
-.hire-form input.left {
-	margin-left: 16px;
-}
+
 .hire-form  input::placeholder{
 	color: #9b9b9b;
 	font-size: 14px;
