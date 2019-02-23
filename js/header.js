@@ -3,7 +3,7 @@ let html = `
     <li><a href="./about.html">ABOUT US</a></li>
     <li><a href="./hire.html">HIRING OPTIONS</a></li>
     <li><a href="./job.html">JOB SEEKERS</a></li>
-    <li><a href="mailto:contact@aizenrecruitment.com?Subject=CV">SEND CV</a></li>      
+    <li><a class="mySendBtn">SEND CV</a></li>      
     <li><a href="./contact.html">CONTACT</a></li>`
 $('.header').append(html);
 
@@ -12,8 +12,8 @@ let headeMobile = `
     <li><a href="./about.html">ABOUT US</a></li>
     <li><a href="./hire.html">HIRING OPTIONS</a></li>
     <li><a href="./job.html">JOB SEEKERS</a></li>
-    <li><a href="mailto:contact@aizenrecruitment.com?Subject=CV">SEND CV</a></li>      
-    <li><a href="./contact.html">CONTACT</a></li>
+    <li><a class="mySendBtn">SEND CV</a></li>     
+    <li><a id="myBtnMobile" href="./contact.html">CONTACT</a></li>
     <div class="social">
         <a class="fab fa-facebook-square" href="" ></a>
         <a class="fab fa-twitter-square" href="" ></a>
@@ -33,3 +33,47 @@ function checkMobileNavigation() {
         headerMobile.style.display = "flex";
     }
   }
+
+let modalView = `
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Send CV</h2>
+            <h4>Please insert requeired field.</h4>
+        </div>
+        <div class="modal-body">
+            <form action="http://localhost:4009/submitForm" enctype="multipart/form-data" method="post">
+                <label for="name">name</label>
+                <input name="name" class="signup-input" type="text">
+                <label for="email">email</label>
+                <input name="email" class="signup-input" type="email">
+                <label for="phone">Phone</label>
+                <input name="phone" class="signup-input" 
+                 pattern="\d*" inputmode="numeric" type="number" >
+                <label for="cv">Upload CV</label>
+                <input class="upload-file" type="file" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
+                <p class="error" style="display: none;"></p>
+                <div class="absolute-container">
+                    <button class="btn send-submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+`;
+$('#myModal').append(modalView);
+
+var modal = document.getElementById('myModal');
+var span = document.getElementsByClassName("close")[0];
+
+$( '.mySendBtn' ).click (function(e) {
+  modal.style.display = "flex";
+});
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

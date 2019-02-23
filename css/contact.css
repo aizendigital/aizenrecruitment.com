@@ -115,13 +115,14 @@
 	justify-content: center !important;
 }
 .contact-form input {
-	border-radius: 20px;
+	border-radius: 8px;
     padding: 8px 16px;
     box-sizing: border-box;
     border: none;
     box-sizing: border-box;
 	width: 300px;
 	outline: none;
+	background: #ffffff;
 }
 .contact-form  input::placeholder{
 	color: #9b9b9b;
