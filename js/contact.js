@@ -1,3 +1,4 @@
+
 var contact = [
     {
         country: "FRANCE",
@@ -66,7 +67,7 @@ $(function () {
         if (!e.isDefaultPrevented()) {
         $.ajax({
         type: "POST",
-        url: "http://localhost:4012/submit",
+        url: config.apiEngine,
         data: new FormData(this),
         processData: false,
         contentType: false,

@@ -41,7 +41,7 @@ let modalView = `
             <h4>Please insert requeired field.</h4>
         </div>
         <div class="modal-body">
-            <form id="sendCV" action="http://localhost:4012/submit" method="post" enctype="multipart/form-data">
+            <form id="sendCV">
                 <label for="name">name</label>
                 <input name="name" class="signup-input" type="text">
                 <label for="email">email</label>
