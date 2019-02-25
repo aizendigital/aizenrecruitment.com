@@ -19,7 +19,6 @@ let headeMobile = `
         <a class="fab fa-twitter-square" href="" ></a>
         <a class="fab fa-linkedin" href="" ></a>
     </div>
-
 `;
 $('#header-mobile').append(headeMobile);
 
@@ -42,7 +41,7 @@ let modalView = `
             <h4>Please insert requeired field.</h4>
         </div>
         <div class="modal-body">
-            <form id="sendCV" enctype="multipart/form-data" method="post">
+            <form id="sendCV" action="http://localhost:4012/submit" method="post" enctype="multipart/form-data">
                 <label for="name">name</label>
                 <input name="name" class="signup-input" type="text">
                 <label for="email">email</label>
@@ -54,7 +53,7 @@ let modalView = `
                 <input class="upload-file" type="file" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
                 <p class="error" style="display: none;"></p>
                 <div class="absolute-container">
-                    <button class="btn send-submit">Send</button>
+                    <button type="submit" class="btn send-submit">Send</button>
                 </div>
             </form>
         </div>
@@ -78,11 +77,28 @@ window.onclick = function(event) {
   }
 }
 
-$('.send-submit').click(function() {
-  var FormInput = $("Form#sendCV input").map(function(){
-      var hireFormInput = $(this).attr("name") + ":" + $(this).val();
-      return (hireFormInput);
-  }).get();
+// $('.send-submit').click(function() {
+//   var t = $("Form#sendCV input").map(function(){
+//       var hireFormInput = $(this).attr("name") + ":" + $(this).val();
+//       return (hireFormInput);
+//   }).get();
+// });
 
 
-});
+$(function () {
+  $('Form#sendCV').on('submit', function (e) {
+   if (!e.isDefaultPrevented()) {
+    $.ajax({
+     type: "POST",
+     url: "http://localhost:4012/submit",
+     data: new FormData(this),
+     processData: false,
+     contentType: false,
+     success: function (data) {
+          alert(data)
+     }
+    })
+    return false
+   }
+  })
+})

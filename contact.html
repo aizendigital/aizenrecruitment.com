@@ -27,7 +27,7 @@
             <span>Email:</span> 
             <a href="emailto:info@aizenrecruitment.com ">info@aizenrecruitment.com</a>
           </div>
-          <Form id="contact" class="contact-form">
+          <Form id="contact" class="contact-form"  action="http://localhost:4012/submit" method="post" enctype="multipart/form-data">
             <div class="main-row">
               <input class="right" type="text" autocomplete="off" name="name" placeholder="Name" />
               <input class="left" type="email" autocomplete="off" name="email" placeholder="Email" />
@@ -36,7 +36,7 @@
               <textarea type="text" name="comment" placeholder="Comment" ></textarea>
             </div>
             <div class="main-row btn">
-              <button class="contact-post" type="text" >Send</button>
+              <button type="submit" class="contact-post" type="text" >Send</button>
             </div>
           </Form>
         </div>

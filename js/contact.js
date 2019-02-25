@@ -61,15 +61,20 @@ $(document).ready(function() {
     setContact();
 });
 
-
-$('.contact-post').click(function() {
-    var FormInput = $("Form#contact input").map(function(){
-        var hireFormInput =  $(this).attr("name") + ":" + $(this).val();
-        return (hireFormInput);
-    }).get();
-    var FormTextarea = $("Form#contact textarea").map(function(){
-        var hireFomTextarea =  $(this).attr("name") + ":" + $(this).val();
-        return (hireFomTextarea);
-    }).get();
-    console.log(FormInput + FormTextarea );
-});
+$(function () {
+    $('Form#contact').on('submit', function (e) {
+        if (!e.isDefaultPrevented()) {
+        $.ajax({
+        type: "POST",
+        url: "http://localhost:4012/submit",
+        data: new FormData(this),
+        processData: false,
+        contentType: false,
+        success: function (data) {
+            alert(data)
+        }
+        })
+        return false
+        }
+    })
+})
