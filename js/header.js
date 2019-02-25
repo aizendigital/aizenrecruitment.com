@@ -41,7 +41,7 @@ let modalView = `
             <h4>Please insert requeired field.</h4>
         </div>
         <div class="modal-body">
-            <form id="sendCV">
+            <div id="sendCV">
                 <label for="name">name</label>
                 <input name="name" class="signup-input" type="text">
                 <label for="email">email</label>
@@ -55,7 +55,7 @@ let modalView = `
                 <div class="absolute-container">
                     <button type="submit" class="btn send-submit">Send</button>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 `;
@@ -77,28 +77,3 @@ window.onclick = function(event) {
   }
 }
 
-// $('.send-submit').click(function() {
-//   var t = $("Form#sendCV input").map(function(){
-//       var hireFormInput = $(this).attr("name") + ":" + $(this).val();
-//       return (hireFormInput);
-//   }).get();
-// });
-
-
-$(function () {
-  $('Form#sendCV').on('submit', function (e) {
-   if (!e.isDefaultPrevented()) {
-    $.ajax({
-     type: "POST",
-     url: "http://localhost:4012/submit",
-     data: new FormData(this),
-     processData: false,
-     contentType: false,
-     success: function (data) {
-          alert(data)
-     }
-    })
-    return false
-   }
-  })
-})
