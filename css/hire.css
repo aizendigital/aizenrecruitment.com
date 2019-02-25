@@ -74,6 +74,7 @@
 	width: 300px;
 	outline: none;
 	height: 46px;
+	background: #ffffff;
 }
 
 .hire-form  input::placeholder{

@@ -42,7 +42,7 @@ let modalView = `
             <h4>Please insert requeired field.</h4>
         </div>
         <div class="modal-body">
-            <form action="http://localhost:4009/submitForm" enctype="multipart/form-data" method="post">
+            <form id="sendCV" enctype="multipart/form-data" method="post">
                 <label for="name">name</label>
                 <input name="name" class="signup-input" type="text">
                 <label for="email">email</label>
@@ -77,3 +77,12 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+$('.send-submit').click(function() {
+  var FormInput = $("Form#sendCV input").map(function(){
+      var hireFormInput = $(this).attr("name") + ":" + $(this).val();
+      return (hireFormInput);
+  }).get();
+
+
+});

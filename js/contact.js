@@ -51,7 +51,7 @@ function setContact() {
             <div class="phone">
                 <b>Tel:</b> ` + contactInfo.contactLocation[0].tel + `
             </div>
-         </div>`;
+         </fiv>`;
         $("#contact-info").append(html);
 
     }
@@ -59,4 +59,17 @@ function setContact() {
 
 $(document).ready(function() {
     setContact();
+});
+
+
+$('.contact-post').click(function() {
+    var FormInput = $("Form#contact input").map(function(){
+        var hireFormInput =  $(this).attr("name") + ":" + $(this).val();
+        return (hireFormInput);
+    }).get();
+    var FormTextarea = $("Form#contact textarea").map(function(){
+        var hireFomTextarea =  $(this).attr("name") + ":" + $(this).val();
+        return (hireFomTextarea);
+    }).get();
+    console.log(FormInput + FormTextarea );
 });

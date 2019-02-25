@@ -119,26 +119,40 @@
           </div>
         </div>
         <div class="hire-form-title">POST A JOB</div>
-        <div class="hire-form">
+        <Form id="hire" class="hire-form">
           <div class="main-row">
-            <input class="right" type="text" autocomplete="off" name="name" placeholder="Name" />
-            <input class="left" type="text" autocomplete="off" name="company" placeholder="Company" />
+            <input 
+              class="right" type="text" 
+              autocomplete="off" name="name" 
+              placeholder="Name"  />
+            <input class="left" type="text" 
+              autocomplete="off" name="company"
+              placeholder="Company" />
           </div>
           <div class="main-row">
-            <input class="right" type="email" autocomplete="off" name="email" placeholder="Email" />
-            <input class="left" type="tell" autocomplete="off" name="tellphone" placeholder="Tellphone" />
+            <input class="right" type="email" 
+              autocomplete="off" name="email" 
+              placeholder="Email" />
+            <input class="left" type="tell" 
+              autocomplete="off" name="tellphone" 
+              placeholder="Tellphone" />
           </div>
           <div class="main-row">
-            <input class="right" type="text" autocomplete="off" name="position" placeholder="Position for hiring" />
-            <input class="left" type="text" autocomplete="off" name="position Type" placeholder="Position type" />
+            <input class="right" type="text" 
+              autocomplete="off" name="positionHire"
+              placeholder="Position for hiring" />
+            <input class="left" type="text" 
+              autocomplete="off" name="positionType" 
+              placeholder="Position type" />
           </div>
           <div class="main-row">
-            <textarea type="text" name="comment" placeholder="Comment" ></textarea>
+            <textarea type="text" name="comment" 
+              placeholder="Comment" ></textarea>
           </div>
           <div class="main-row btn">
             <button class="submit-post" type="text" >POST</button>
           </div>
-        </div>
+        </Form>
     </div>
     <div class="footer">
     </div>
@@ -147,6 +161,7 @@
 
 <script src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/hire.js"></script>
 <script src="js/header.js"></script>
 <script src="js/footer.js"></script>
 </body>
