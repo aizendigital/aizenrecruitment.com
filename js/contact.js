@@ -108,6 +108,9 @@ function setContact() {
           $('#contact .error').removeClass("showError");
           $('#contact input, #contact textarea').removeClass("valid");
           $('#contact .success').addClass("showSuccess");
+          setTimeout(function() {
+            $('#contact .success').removeClass("showSuccess");
+         }, 10000);
         }
       })
   })

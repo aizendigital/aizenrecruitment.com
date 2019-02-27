@@ -143,6 +143,9 @@ $(document).ready(function () {
           $('#sendCV .error').removeClass("showError");
           $('#sendCV input').removeClass("valid");
           $('#sendCV .success').addClass("showSuccess");
+          setTimeout(function() {
+          $('#contact .success').removeClass("showSuccess");
+          }, 10000);
           modal.style.display = "none";
         }
       })

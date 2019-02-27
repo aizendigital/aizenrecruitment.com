@@ -70,6 +70,9 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
           $('#hire .error').removeClass("showError");
           $('#hire input, #hire textarea').removeClass("valid");
           $('#hire .success').addClass("showSuccess");
+          setTimeout(function() {
+            $('#hire .success').removeClass("showSuccess");
+         }, 10000);
         }
       })
   })
