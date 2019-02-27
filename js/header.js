@@ -47,12 +47,15 @@ let modalView = `
                 <label for="name">name</label>
                 <input 
                 class="signup-input" type="text" 
-                autocomplete="off" name="name" 
+                autocomplete="off" name="name"  autocomplete="off"
                 placeholder="Name" id="name" />
                 <label for="email">email</label>
-                <input name="email" class="signup-input" type="email" id="email">
+                <input name="email" class="signup-input"
+                 type="email" id="email"  autocomplete="off">
                 <label for="phone">Phone</label>
-                <input name="phone" class="signup-input" pattern="\d*" inputmode="numeric" type="number" id="phone" >
+                <input name="phone" class="signup-input"
+                 autocomplete="off"
+                 pattern="\d*" inputmode="numeric" type="number" id="phone" >
                 <label for="cv">Upload CV</label>
                 <input class="upload-file" type="file" id="inputFile" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
                 <p class="error" style="display: none;"></p>

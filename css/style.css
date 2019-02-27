@@ -326,12 +326,25 @@ body {
 	padding: 8px  4px;
 	align-items: flex-start;
 	width: auto;
-	display: none;
+	display: flex;
 	font-size: 14px;
 	font-weight: 500;
 	border-radius: 4px;
 	margin: 8px auto;
+	opacity: 0;
 }
-.showSuccess{
-	display: flex;
+
+.showSuccess {
+	-webkit-animation: cssAnimation 5s forwards; 
+	animation: cssAnimation 5s forwards;
+}
+@keyframes cssAnimation {
+	0%   {opacity: 1;}
+	90%  {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes cssAnimation {
+	0%   {opacity: 1;}
+	90%  {opacity: 1;}
+	100% {opacity: 0;}
 }
