@@ -124,33 +124,39 @@
             <input 
               class="right" type="text" 
               autocomplete="off" name="name" 
-              placeholder="Name"  />
+              placeholder="Name" id="name" />
             <input class="left" type="text" 
               autocomplete="off" name="company"
-              placeholder="Company" />
+              placeholder="Company" id="company" />
           </div>
           <div class="main-row">
             <input class="right" type="email" 
               autocomplete="off" name="email" 
-              placeholder="Email" />
+              placeholder="Email" id="email" />
             <input class="left" type="tell" 
-              autocomplete="off" name="tellphone" 
+              autocomplete="off" name="tellphone" id="phone"
               placeholder="Tellphone" />
           </div>
           <div class="main-row">
             <input class="right" type="text" 
               autocomplete="off" name="positionHire"
-              placeholder="Position for hiring" />
+              placeholder="Position for hiring" id="position-hire" />
             <input class="left" type="text" 
               autocomplete="off" name="positionType" 
-              placeholder="Position type" />
+              placeholder="Position type" id="position-type" />
           </div>
           <div class="main-row">
             <textarea type="text" name="comment" 
-              placeholder="Comment" ></textarea>
+              placeholder="Comment" id="comment"></textarea>
+          </div>
+          <div class="error">
+            <span>There are all required!!! (--__--) Fill All Fields Please!</span>
+          </div>
+          <div class="success">
+            <span >Success!!! (^____^)</span>
           </div>
           <div class="main-row btn">
-            <button type="submit" class="submit-post" type="text" >POST</button>
+            <button type="submit" class="submit-post" id="submit-hire" type="text" >POST</button>
           </div>
         </div>
     </div>
