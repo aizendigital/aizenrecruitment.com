@@ -29,14 +29,20 @@
           </div>
           <div id="contact" class="contact-form">
             <div class="main-row">
-              <input class="right" type="text" autocomplete="off" name="name" placeholder="Name" />
-              <input class="left" type="email" autocomplete="off" name="email" placeholder="Email" />
+              <input class="right" type="text" autocomplete="off" name="name" id="name" placeholder="Name" />
+              <input class="left" type="email" autocomplete="off" name="email" id="email" placeholder="Email" />
             </div>
             <div class="main-row">
-              <textarea type="text" name="comment" placeholder="Comment" ></textarea>
+              <textarea type="text" name="comment" id="comment" placeholder="Comment" ></textarea>
+            </div>
+            <div class="error">
+              <span>There are all required!!! (--__--) Fill All Fields Please!</span>
+            </div>
+            <div class="success">
+              <span >Success!!! (^____^)</span>
             </div>
             <div class="main-row btn">
-              <button type="submit" disabled onclick="sendContactUs()" class="contact-post" type="text" >Send</button>
+              <button type="submit" id="submit-contact" class="contact-post" type="text" >Send</button>
             </div>
           </div>
         </div>

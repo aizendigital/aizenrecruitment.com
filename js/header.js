@@ -76,4 +76,21 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
+$("#submit-button").click(function(e) {
+  e.preventDefault();
+  $.ajax({
+      type: "POST",
+      url: "localhost:4010/submit",
+      data: {
+          email: document.getElementById('email').value,
+          name: document.getElementById('name').value,
+          phone: document.getElementById('phone').value,
+      },
+      success: function (result) {
+          return e.statusCode()
+      },
+      error: function(result) {
+          return e.statusCode()
+      }
+  });
+});

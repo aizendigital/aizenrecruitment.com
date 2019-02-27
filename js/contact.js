@@ -1,4 +1,6 @@
+document.writeln("<script type='text/javascript' src='config/config.js'></script>");
 
+console.log(apiEngineForm)
 var contact = [
     {
         country: "FRANCE",
@@ -58,7 +60,59 @@ function setContact() {
     }
 }
 
-$(document).ready(function() {
-    setContact();
-});
 
+  $(document).ready(function () {
+    //set contact information
+    setContact();
+
+    //contactform
+    let submitButton = document.getElementById("submit-contact")
+
+    $('#name').on('input', function() {
+		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+    })
+    $('#email').on('input', function() {
+		if($(this).val() && $(this).val().includes('@') && $(this).val().includes('.')){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+			})
+    $('#comment').on('input', function() {
+		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+            })
+    $("#submit-contact").click(function(e) {
+          e.preventDefault()
+
+        if(!$('#contact #name').hasClass('valid') || 
+           !$('#contact #email').hasClass('valid') ||
+           !$('#contact #comment').hasClass('valid') ) {
+                $('#contact .error').addClass("showError");
+                $('#contact input, #contact textarea').addClass("invalid");
+           } else {
+            $('#contact .error').removeClass("showError");
+
+            var data = new FormData()
+            data.append('name', $("#name").val())
+            data.append('email', $("#email").val())
+            data.append('comment', $("#comment").val())
+          $.ajax({
+              type: "POST",
+              url: apiEngineForm,
+              data: data,
+              processData: false,
+              contentType: false,
+              success: function (result, stat, xhr){
+                $("#contact").find("input[type=text], textarea").val("");
+                return xhr.status
+              },
+              error: function(result){
+                 return result.statusCode()
+              }
+          })
+          $("#contact").find("input, textarea").val("");
+          $('#contact .error').removeClass("showError");
+          $('#contact input, #contact textarea').removeClass("valid");
+          $('#contact .success').addClass("showSuccess");
+        }
+      })
+  })
