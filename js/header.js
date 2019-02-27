@@ -1,3 +1,5 @@
+document.writeln("<script type='text/javascript' src='config/config.js'></script>");
+
 let html = ` 
     <li><a href="./index.html">FIRST PAGE</a></li>
     <li><a href="./about.html">ABOUT US</a></li>
@@ -43,17 +45,22 @@ let modalView = `
         <div class="modal-body">
             <div id="sendCV">
                 <label for="name">name</label>
-                <input name="name" class="signup-input" type="text">
+                <input name="name" class="signup-input" type="text" id="name">
                 <label for="email">email</label>
-                <input name="email" class="signup-input" type="email">
+                <input name="email" class="signup-input" type="email" id="email">
                 <label for="phone">Phone</label>
-                <input name="phone" class="signup-input" 
-                 pattern="\d*" inputmode="numeric" type="number" >
+                <input name="phone" class="signup-input" pattern="\d*" inputmode="numeric" type="number" id="phone" >
                 <label for="cv">Upload CV</label>
-                <input class="upload-file" type="file" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
+                <input class="upload-file" type="file" id="inputFile" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
                 <p class="error" style="display: none;"></p>
+                <div class="error">
+                    <span>There are all required!!! (--__--) Fill All Fields Please!</span>
+                </div>
+                <div class="success">
+                    <span >Success!!! (^____^)</span>
+                </div>
                 <div class="absolute-container">
-                    <button type="submit" class="btn send-submit">Send</button>
+                    <button type="submit" id="submit-cv" class="btn send-submit">Send</button>
                 </div>
             </div>
         </div>
@@ -76,21 +83,63 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-$("#submit-button").click(function(e) {
-  e.preventDefault();
-  $.ajax({
-      type: "POST",
-      url: "localhost:4010/submit",
-      data: {
-          email: document.getElementById('email').value,
-          name: document.getElementById('name').value,
-          phone: document.getElementById('phone').value,
-      },
-      success: function (result) {
-          return e.statusCode()
-      },
-      error: function(result) {
-          return e.statusCode()
-      }
-  });
-});
+
+
+$(document).ready(function () {
+
+    //send CV
+    $('#name').on('input', function() {
+		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+    })
+    $('#email').on('input', function() {
+        console.log($('#email').val());
+		if($(this).val() && $(this).val().includes('@') && $(this).val().includes('.')){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+    })
+    $('#phone').on('input', function() {
+		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+    })
+
+    $('#inputFile').on('input', function() {
+		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
+		else{$(this).removeClass("valid").addClass("invalid")}
+    })  
+
+    $("#submit-cv").click(function(e) {
+          e.preventDefault()
+
+        if(!$('#sendCV #name').hasClass('valid') || 
+           !$('#sendCV #email').hasClass('valid') ||
+           !$('#sendCV #phone').hasClass('valid') ||
+           !$('#sendCV #inputFile').hasClass('valid')) {
+                $('#sendCV .error').addClass("showError");
+                $('#sendCV input').addClass("invalid");
+           } else {
+            $('#sendCV .error').removeClass("showError");
+
+            var data = new FormData()
+            data.append('name', $("#name").val())
+            data.append('email', $("#email").val())
+            data.append('phone', $("#phone").val())
+            data.append('inputFile', $('#inputFile').prop('files')[0])
+
+          $.ajax({
+              type: "POST",
+              url: apiEngineForm,
+              data: data,
+              processData: false,
+              contentType: false,
+              success: function (result, stat, xhr){
+              },
+              error: function(result){
+              }
+          })
+          $("#sendCV").find("input").val("");
+          $('#sendCV .error').removeClass("showError");
+          $('#sendCV input').removeClass("valid");
+          $('#sendCV .success').addClass("showSuccess");
+        }
+      })
+  })

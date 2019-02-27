@@ -2,7 +2,7 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
 
   $(document).ready(function () {
 
-    //contactform
+    //Hire Form
     $('#name').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
