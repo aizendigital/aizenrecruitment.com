@@ -3,35 +3,35 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
   $(document).ready(function () {
 
     //Hire Form
-    $('#name').on('input', function() {
+    $('#hire #name').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#company').on('input', function() {
+    $('#hire #company').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#email').on('input', function() {
+    $('#hire #email').on('input', function() {
 		if($(this).val() && $(this).val().includes('@') && $(this).val().includes('.')){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#phone').on('input', function() {
+    $('#hire #phone').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#position-hire').on('input', function() {
+    $('#hire #position-hire').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#position-type').on('input', function() {
+    $('#hire #position-type').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#comment').on('input', function() {
+    $('#hire #comment').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
             })
-    $("#submit-hire").click(function(e) {
+    $("#hire #submit-hire").click(function(e) {
           e.preventDefault()
 
         if(!$('#hire #name').hasClass('valid') || 
@@ -47,13 +47,13 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
             $('#hire .error').removeClass("showError");
 
             var data = new FormData()
-            data.append('name', $("#name").val())
-            data.append('company', $("#company").val())
-            data.append('email', $("#email").val())
-            data.append('phone', $("#phone").val())
-            data.append('position hire', $("#position-hire").val())
-            data.append('position type', $("#position-type").val())
-            data.append('comment', $("#comment").val())
+            data.append('name', $("#hire #name").val())
+            data.append('company', $("#hire #company").val())
+            data.append('email', $("#hire #email").val())
+            data.append('phone', $("#hire #phone").val())
+            data.append('position hire', $("#hire #position-hire").val())
+            data.append('position type', $("#hire #position-type").val())
+            data.append('comment', $("#hire #comment").val())
 
           $.ajax({
               type: "POST",

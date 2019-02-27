@@ -45,7 +45,10 @@ let modalView = `
         <div class="modal-body">
             <div id="sendCV">
                 <label for="name">name</label>
-                <input name="name" class="signup-input" type="text" id="name">
+                <input 
+                class="signup-input" type="text" 
+                autocomplete="off" name="name" 
+                placeholder="Name" id="name" />
                 <label for="email">email</label>
                 <input name="email" class="signup-input" type="email" id="email">
                 <label for="phone">Phone</label>
@@ -88,21 +91,21 @@ window.onclick = function(event) {
 $(document).ready(function () {
 
     //send CV
-    $('#name').on('input', function() {
+    $('#sendCV #name').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#email').on('input', function() {
+    $('#sendCV #email').on('input', function() {
         console.log($('#email').val());
 		if($(this).val() && $(this).val().includes('@') && $(this).val().includes('.')){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
-    $('#phone').on('input', function() {
+    $('#sendCV #phone').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
 
-    $('#inputFile').on('input', function() {
+    $('#sendCV #inputFile').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })  
@@ -120,10 +123,10 @@ $(document).ready(function () {
             $('#sendCV .error').removeClass("showError");
 
             var data = new FormData()
-            data.append('name', $("#name").val())
-            data.append('email', $("#email").val())
-            data.append('phone', $("#phone").val())
-            data.append('inputFile', $('#inputFile').prop('files')[0])
+            data.append('name', $("#sendCV #name").val())
+            data.append('email', $("#sendCV #email").val())
+            data.append('phone', $("#sendCV #phone").val())
+            data.append('inputFile', $('#sendCV #inputFile').prop('files')[0])
 
           $.ajax({
               type: "POST",
@@ -140,6 +143,7 @@ $(document).ready(function () {
           $('#sendCV .error').removeClass("showError");
           $('#sendCV input').removeClass("valid");
           $('#sendCV .success').addClass("showSuccess");
+          modal.style.display = "none";
         }
       })
   })
