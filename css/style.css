@@ -296,7 +296,7 @@ body {
 	text-align: right;
 	padding: 8px  4px;
 	align-items: flex-start;
-	width: 100%;
+	width: auto;
 	display: none;
 	font-size: 14px;
 	font-weight: 500;
@@ -325,7 +325,7 @@ body {
 	text-align: right;
 	padding: 8px  4px;
 	align-items: flex-start;
-	width: 100%;
+	width: auto;
 	display: none;
 	font-size: 14px;
 	font-weight: 500;

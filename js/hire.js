@@ -62,11 +62,8 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
               processData: false,
               contentType: false,
               success: function (result, stat, xhr){
-                $("#hire").find("input[type=text], textarea").val("");
-                return xhr.status
               },
               error: function(result){
-                 return result.statusCode()
               }
           })
           $("#hire").find("input, textarea").val("");

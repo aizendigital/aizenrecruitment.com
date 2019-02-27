@@ -100,11 +100,8 @@ function setContact() {
               processData: false,
               contentType: false,
               success: function (result, stat, xhr){
-                $("#contact").find("input[type=text], textarea").val("");
-                return xhr.status
               },
               error: function(result){
-                 return result.statusCode()
               }
           })
           $("#contact").find("input, textarea").val("");
