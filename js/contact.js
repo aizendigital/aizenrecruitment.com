@@ -66,8 +66,6 @@ function setContact() {
     setContact();
 
     //contactform
-    let submitButton = document.getElementById("submit-contact")
-
     $('#name').on('input', function() {
 		if($(this).val()){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
