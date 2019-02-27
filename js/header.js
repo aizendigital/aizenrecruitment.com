@@ -148,7 +148,7 @@ $(document).ready(function () {
           $('#sendCV .success').addClass("showSuccess");
           setTimeout(function() {
           $('#contact .success').removeClass("showSuccess");
-          }, 10000);
+          }, 8000);
           modal.style.display = "none";
         }
       })

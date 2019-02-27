@@ -88,11 +88,12 @@ function setContact() {
                 $('#contact input, #contact textarea').addClass("invalid");
            } else {
             $('#contact .error').removeClass("showError");
-
+            
             var data = new FormData()
             data.append('name', $("#name").val())
             data.append('email', $("#email").val())
             data.append('comment', $("#comment").val())
+
           $.ajax({
               type: "POST",
               url: apiEngineForm,
@@ -110,7 +111,7 @@ function setContact() {
           $('#contact .success').addClass("showSuccess");
           setTimeout(function() {
             $('#contact .success').removeClass("showSuccess");
-         }, 10000);
+         }, 8000);
         }
       })
   })

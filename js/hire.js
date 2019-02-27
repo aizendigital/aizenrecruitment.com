@@ -51,10 +51,9 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
             data.append('company', $("#hire #company").val())
             data.append('email', $("#hire #email").val())
             data.append('phone', $("#hire #phone").val())
-            data.append('position hire', $("#hire #position-hire").val())
-            data.append('position type', $("#hire #position-type").val())
+            data.append('positionhire', $("#hire #position-hire").val())
+            data.append('positiontype', $("#hire #position-type").val())
             data.append('comment', $("#hire #comment").val())
-
           $.ajax({
               type: "POST",
               url: apiEngineForm,
@@ -72,7 +71,7 @@ document.writeln("<script type='text/javascript' src='config/config.js'></script
           $('#hire .success').addClass("showSuccess");
           setTimeout(function() {
             $('#hire .success').removeClass("showSuccess");
-         }, 10000);
+         }, 8000);
         }
       })
   })
