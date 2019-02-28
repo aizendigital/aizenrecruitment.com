@@ -54,8 +54,7 @@ let modalView = `
                  type="email" id="email"  autocomplete="off">
                 <label for="phone">Phone</label>
                 <input name="phone" class="signup-input"
-                 autocomplete="off"
-                 pattern="\d*" inputmode="numeric" type="number" id="phone" >
+                 autocomplete="off" type="tel" id="phone" >
                 <label for="cv">Upload CV</label>
                 <input class="upload-file" type="file" id="inputFile" name="inputFile" accept="application/pdf,application/vnd.ms-excel" />
                 <p class="error" style="display: none;"></p>
@@ -99,7 +98,6 @@ $(document).ready(function () {
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
     $('#sendCV #email').on('input', function() {
-        console.log($('#email').val());
 		if($(this).val() && $(this).val().includes('@') && $(this).val().includes('.')){$(this).removeClass("invalid").addClass("valid")}
 		else{$(this).removeClass("valid").addClass("invalid")}
     })
