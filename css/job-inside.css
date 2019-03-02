@@ -41,12 +41,12 @@
     justify-content: center;
     align-items: center;
 }
-.job-inside-header-btn:hover, :focus, :active {
+/* .job-inside-header-btn:hover, :focus, :active {
     color: #ffffff;
     text-decoration: none;
     border: solid 6px #fa5c17;
     background-color: #dd4412;
-}
+} */
 .job-inside-body{
     font-size: 14px;
     font-weight: 600;
@@ -88,14 +88,14 @@
     padding: 8px 16px;
     box-sizing: border-box;
 }
-.job-inside-btn a:hover, :focus, :active{
+/* .job-inside-btn a:hover, :focus, :active{
     color: #ffffff;
     text-decoration: none;
     border: solid 1px #dd4412;
     color: #dd4412;
     background: #ffffff;
     text-decoration: none;
-}
+} */
 .job-inside-related span {
     font-size: 16px;
     font-weight: 600;
@@ -108,4 +108,64 @@
     text-align: center;
     display: flex;
     justify-content: center;
+}
+.job-inside-related {
+    display: grid;
+    grid-template-columns: 15% 70% 15%;
+}
+.slider-card {
+    border-radius: 22px;
+    background-color: #ffffff;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 16px;
+    margin: 32px auto;
+    box-sizing: border-box;
+}
+.job-inside-related .slider-card .title{
+    font-size: 25px;
+    font-weight: 600;
+    color: #fa5c17;
+}
+.job-inside-related .slider-card .sub{
+    font-size: 16px;
+    font-weight: 600;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #000000;
+    padding-bottom: 8px;
+}
+.job-inside-related .slider-card .descr {
+    font-size: 14px;
+    color: #000000;
+    /* white-space: pre-line; */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 200px;
+}
+.job-inside-related .slider-card .information {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 8px;
+}
+.owl-theme .owl-dots .owl-dot{
+    display: none;
+}
+button.owl-next, button.owl-prev {
+    font-size: 42px !important;
+}
+.owl-nav {
+    position: absolute;
+    width: 120%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -200px !important;
+    margin-left: -10%;
 }

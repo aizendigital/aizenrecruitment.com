@@ -42,7 +42,16 @@ var products = [
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750",
+                    information: " via LTD Salt are looking for a consultant with exceptional experience…"
+
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
             }   
         }
     },
@@ -64,13 +73,37 @@ var products = [
                 location: "Greater London",
                 type: "Permanent",
                 limit: "£25000 - £30000 per annum",
+                description: `
+                    A leading publisher are looking for a motivated CRM Executive to join their established CRM team. Your main responsibilities will be to ensure that you are building relevant and highly targeted campaigns – that deliver results.
+                    <br/><br/>This is an entry level role, so whether you have had an internship in a CRM/Email/Digital position, or if you are looking for your 2nd job in CRM/Email then this could be a great fit!`,
+                responsibilities: `
+                    Work closely with the CRM, broad marketing and sales team to build and deliver weekly campaigns of a high standard <br/>
+                    Manage day-to-day email campaigns <br/>
+                    Work on the trigger campaigns across the database <br/>
+                    Check BAU email campaigns, and ensure they are fit for purpose <br/>
+                    Work closely with the design team`,
+                skills: `
+                    Experience and proven results in creating engaging email marketing campaigns <br/>
+                    Understanding of customer journeys and retention, acquisition and engagement <br/>
+                    Ideally educated to degree level <br/>
+                    Good team player, and confident presenting to stakeholders <br/>
+                    Previous experience in a marketing/ CRM role <br/>
+                    To apply, please send your CV to – mchristie@welovesalt.com<br/><br/>`,
+                information: `This job ad was posted by Salt. To find out more about Salt’s Privacy Policy and how your application is processed, please visit our website https://www.welovesalt.com/privacy-policy/.<br/><br/>`,
                 info: {
                     refrence: "JO-1902-145738",
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
-            }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750 via LTD Salt are looking for a consultant with exceptional experience…"
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
+            }   
         }
     },
     {
@@ -91,13 +124,37 @@ var products = [
                 location: "Greater London",
                 type: "Permanent",
                 limit: "£25000 - £30000 per annum",
+                description: `
+                    A leading publisher are looking for a motivated CRM Executive to join their established CRM team. Your main responsibilities will be to ensure that you are building relevant and highly targeted campaigns – that deliver results.
+                    <br/><br/>This is an entry level role, so whether you have had an internship in a CRM/Email/Digital position, or if you are looking for your 2nd job in CRM/Email then this could be a great fit!`,
+                responsibilities: `
+                    Work closely with the CRM, broad marketing and sales team to build and deliver weekly campaigns of a high standard <br/>
+                    Manage day-to-day email campaigns <br/>
+                    Work on the trigger campaigns across the database <br/>
+                    Check BAU email campaigns, and ensure they are fit for purpose <br/>
+                    Work closely with the design team`,
+                skills: `
+                    Experience and proven results in creating engaging email marketing campaigns <br/>
+                    Understanding of customer journeys and retention, acquisition and engagement <br/>
+                    Ideally educated to degree level <br/>
+                    Good team player, and confident presenting to stakeholders <br/>
+                    Previous experience in a marketing/ CRM role <br/>
+                    To apply, please send your CV to – mchristie@welovesalt.com<br/><br/>`,
+                information: `This job ad was posted by Salt. To find out more about Salt’s Privacy Policy and how your application is processed, please visit our website https://www.welovesalt.com/privacy-policy/.<br/><br/>`,
                 info: {
                     refrence: "JO-1902-145738",
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
-            }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750 via LTD Salt are looking for a consultant with exceptional experience…"
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
+            }   
         }
     },
     {
@@ -118,14 +175,38 @@ var products = [
                 location: "Greater London",
                 type: "Permanent",
                 limit: "£25000 - £30000 per annum",
+                description: `
+                    A leading publisher are looking for a motivated CRM Executive to join their established CRM team. Your main responsibilities will be to ensure that you are building relevant and highly targeted campaigns – that deliver results.
+                    <br/><br/>This is an entry level role, so whether you have had an internship in a CRM/Email/Digital position, or if you are looking for your 2nd job in CRM/Email then this could be a great fit!`,
+                responsibilities: `
+                    Work closely with the CRM, broad marketing and sales team to build and deliver weekly campaigns of a high standard <br/>
+                    Manage day-to-day email campaigns <br/>
+                    Work on the trigger campaigns across the database <br/>
+                    Check BAU email campaigns, and ensure they are fit for purpose <br/>
+                    Work closely with the design team`,
+                skills: `
+                    Experience and proven results in creating engaging email marketing campaigns <br/>
+                    Understanding of customer journeys and retention, acquisition and engagement <br/>
+                    Ideally educated to degree level <br/>
+                    Good team player, and confident presenting to stakeholders <br/>
+                    Previous experience in a marketing/ CRM role <br/>
+                    To apply, please send your CV to – mchristie@welovesalt.com<br/><br/>`,
+                information: `This job ad was posted by Salt. To find out more about Salt’s Privacy Policy and how your application is processed, please visit our website https://www.welovesalt.com/privacy-policy/.<br/><br/>`,
                 info: {
                     refrence: "JO-1902-145738",
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
-            }
-        }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750 via LTD Salt are looking for a consultant with exceptional experience…"
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
+            } 
+        }  
     },
     {
         product: {
@@ -145,13 +226,37 @@ var products = [
                 location: "Greater London",
                 type: "Permanent",
                 limit: "£25000 - £30000 per annum",
+                description: `
+                    A leading publisher are looking for a motivated CRM Executive to join their established CRM team. Your main responsibilities will be to ensure that you are building relevant and highly targeted campaigns – that deliver results.
+                    <br/><br/>This is an entry level role, so whether you have had an internship in a CRM/Email/Digital position, or if you are looking for your 2nd job in CRM/Email then this could be a great fit!`,
+                responsibilities: `
+                    Work closely with the CRM, broad marketing and sales team to build and deliver weekly campaigns of a high standard <br/>
+                    Manage day-to-day email campaigns <br/>
+                    Work on the trigger campaigns across the database <br/>
+                    Check BAU email campaigns, and ensure they are fit for purpose <br/>
+                    Work closely with the design team`,
+                skills: `
+                    Experience and proven results in creating engaging email marketing campaigns <br/>
+                    Understanding of customer journeys and retention, acquisition and engagement <br/>
+                    Ideally educated to degree level <br/>
+                    Good team player, and confident presenting to stakeholders <br/>
+                    Previous experience in a marketing/ CRM role <br/>
+                    To apply, please send your CV to – mchristie@welovesalt.com<br/><br/>`,
+                information: `This job ad was posted by Salt. To find out more about Salt’s Privacy Policy and how your application is processed, please visit our website https://www.welovesalt.com/privacy-policy/.<br/><br/>`,
                 info: {
                     refrence: "JO-1902-145738",
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
-            }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750 via LTD Salt are looking for a consultant with exceptional experience…"
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
+            }   
         }
     },
     {
@@ -172,19 +277,42 @@ var products = [
                 location: "Greater London",
                 type: "Permanent",
                 limit: "£25000 - £30000 per annum",
+                description: `
+                    A leading publisher are looking for a motivated CRM Executive to join their established CRM team. Your main responsibilities will be to ensure that you are building relevant and highly targeted campaigns – that deliver results.
+                    <br/><br/>This is an entry level role, so whether you have had an internship in a CRM/Email/Digital position, or if you are looking for your 2nd job in CRM/Email then this could be a great fit!`,
+                responsibilities: `
+                    Work closely with the CRM, broad marketing and sales team to build and deliver weekly campaigns of a high standard <br/>
+                    Manage day-to-day email campaigns <br/>
+                    Work on the trigger campaigns across the database <br/>
+                    Check BAU email campaigns, and ensure they are fit for purpose <br/>
+                    Work closely with the design team`,
+                skills: `
+                    Experience and proven results in creating engaging email marketing campaigns <br/>
+                    Understanding of customer journeys and retention, acquisition and engagement <br/>
+                    Ideally educated to degree level <br/>
+                    Good team player, and confident presenting to stakeholders <br/>
+                    Previous experience in a marketing/ CRM role <br/>
+                    To apply, please send your CV to – mchristie@welovesalt.com<br/><br/>`,
+                information: `This job ad was posted by Salt. To find out more about Salt’s Privacy Policy and how your application is processed, please visit our website https://www.welovesalt.com/privacy-policy/.<br/><br/>`,
                 info: {
                     refrence: "JO-1902-145738",
                     salaryPer: "Annum",
                     jobDuration: "",
                     jobStartDate: "",
-                }
+                },
+                relatedData: {
+                    role: "CRO Consultant",
+                    location: "South London & south of London Contract",
+                    length: "6 month initial Day",
+                    rate: "£600- £750 via LTD Salt are looking for a consultant with exceptional experience…"
+                },
+                relatedPost: ["pr3", "pr5", "pr2", "pr4"]
             }
         }
     }
 ];
 
 function setProducts() {
-    
     for(var i = 1; i<= products.length; i++) {
         var product = products[i-1].product;
         generateViewLink = './job-inside.html?jobpage=' + product.id;
@@ -275,10 +403,43 @@ function loadJobInside(index) {
             </div>
         </div>
         <div></div>
-    `
+    `;
+    for(var i=0; i<JobInside.relatedPost.length;i++) {
+        numberOfRelated = JobInside.relatedPost[i].replace('pr','');
+        console.log(numberOfRelated+ "i" + i);
+        var product = products[numberOfRelated].product;
+        console.log(product.title)
+        var relatedHtml = `
+        <div class="slider-card">
+            <div class="title">`+product.title+`</div>
+            <div class="sub">`+product.insideProduct.sub+`</div>
+            <div class="descr">
+                Role:`+product.insideProduct.relatedData.role+`
+                Location:` +product.insideProduct.relatedData.location+`
+                length: `+product.insideProduct.relatedData.length+`
+                rate:` +product.insideProduct.relatedData.rate+`
+                information `+product.insideProduct.relatedData.information+
+            `</div>
+            <div class="information">`+product.insideProduct.location+`</div>
+            <div class="information">`+product.insideProduct.cost+`</div>
+        </div>
+        `;
+        $(".owl-carousel").append(relatedHtml);
+    }
+    $('.owl-carousel').owlCarousel({
+        item: 3,
+        loop: true,
+        nav: true,
+        margin: 10,
+        navText:  [
+            "<i class='fa fa-chevron-left'></i>",
+            "<i class='fa fa-chevron-right'></i>"
+        ],  
+    })
+   
     $(".job-inside-header").append(headerHtml);
     $(".job-inside-body").append(BodyHtml);
-
+    $(".job-related-slider").append(relatedHtml);
 }
 
 switch (JobPage) {
@@ -301,6 +462,8 @@ switch (JobPage) {
         loadJobInside(6);
         break;
 }
+
+
 
 
 
