@@ -1,6 +1,5 @@
 document.writeln("<script type='text/javascript' src='config/config.js'></script>");
 
-console.log(apiEngineForm)
 var contact = [
     {
         country: "FRANCE",

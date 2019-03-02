@@ -406,9 +406,7 @@ function loadJobInside(index) {
     `;
     for(var i=0; i<JobInside.relatedPost.length;i++) {
         numberOfRelated = JobInside.relatedPost[i].replace('pr','');
-        console.log(numberOfRelated+ "i" + i);
         var product = products[numberOfRelated].product;
-        console.log(product.title)
         var relatedHtml = `
         <div class="slider-card">
             <div class="title">`+product.title+`</div>
