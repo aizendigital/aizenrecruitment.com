@@ -41,12 +41,14 @@
     justify-content: center;
     align-items: center;
 }
-/* .job-inside-header-btn:hover, :focus, :active {
+.job-inside-header-btn:hover,
+.job-inside-header-btn:focus,
+.job-inside-header-btn:active {
     color: #ffffff;
     text-decoration: none;
     border: solid 6px #fa5c17;
     background-color: #dd4412;
-} */
+}
 .job-inside-body{
     font-size: 14px;
     font-weight: 600;
@@ -88,14 +90,16 @@
     padding: 8px 16px;
     box-sizing: border-box;
 }
-/* .job-inside-btn a:hover, :focus, :active{
+.job-inside-body .job-inside-btn a:hover,
+.job-inside-body .job-inside-btn a:focus,
+.job-inside-body .job-inside-btn a :active{
     color: #ffffff;
     text-decoration: none;
     border: solid 1px #dd4412;
     color: #dd4412;
     background: #ffffff;
     text-decoration: none;
-} */
+}
 .job-inside-related span {
     font-size: 16px;
     font-weight: 600;
