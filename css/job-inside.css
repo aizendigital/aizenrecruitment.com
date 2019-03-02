@@ -173,3 +173,22 @@ button.owl-next, button.owl-prev {
     margin-top: -200px !important;
     margin-left: -10%;
 }
+
+@media screen and (max-width: 818px) {
+    .job-inside-header {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: space-between;
+        height: auto;
+    }
+    .job-inside-header-btn{
+        margin-top: 32px;
+    }
+}

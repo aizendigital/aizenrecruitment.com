@@ -275,7 +275,8 @@ body {
 		padding: 8px;
 	}
 	/* Landing */ 
-	.landing-background .nav-mobile, .job .nav-mobile {
+	.landing-background .nav-mobile, .job .nav-mobile,
+	.job-inside .nav-mobile {
 		position: absolute;
 	}
 	.modal-content {
