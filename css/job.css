@@ -1,11 +1,4 @@
 /* Job */
-.job-header {
-	background-color: #22223f;
-	display: flex;
-	flex-direction: column;
-    justify-content: center;
-	padding: 8px 32px 0 32px;
-}
 .job-header span{
 	font-size: 14px;
 	font-weight: 600;
@@ -84,9 +77,10 @@
     box-sizing: border-box;
 }
 .main-btn{
-    display: flex;
+	display: flex;
+	flex-direction: column;
     justify-content: center;
-	align-content: center;
+	align-content: space-between;
 	padding: 8px 16px;
 	box-sizing: border-box;
 	align-items: center;
@@ -101,6 +95,8 @@
 	color: #ffffff;
 	border: 1px solid #fa5c17;
 	cursor: pointer;
+	margin: 8px auto;
+	width: 220px;
 }
 .btn-apply:hover, .btn-apply:active{
 	background-color: #ffffff;
